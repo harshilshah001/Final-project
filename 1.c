@@ -3,7 +3,7 @@
 #include <math.h>
 
 char str[101];
-void removeCh(int i, int n)
+void remCh(int i, int n)
 {
     while(i<n)
     {
@@ -16,15 +16,15 @@ void removeCh(int i, int n)
 int main()
 {
     int i=0,len=0,n;
-    //printf("Enter the length of string:");
+    //Enter the length of string
     scanf("%d",&n);
-    //printf("Enter the string:");
+    //Enter the string
     scanf("%s",str);
     while(i<n)
     {
         if((str[i]==str[i+1])&&(i>=0)&&str[i]!='\0')
         {
-            removeCh(i,n);
+            remCh(i,n);
             i--;
         }
         else
